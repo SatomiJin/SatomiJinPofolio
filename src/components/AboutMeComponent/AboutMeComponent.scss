@@ -1,0 +1,119 @@
+.about-me-container {
+  .container {
+    .row {
+      .skills {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .title {
+          font-weight: 700;
+          font-size: 2rem;
+          width: fit-content;
+          border-bottom: 2px solid var(--color--1);
+        }
+        .technology-skills {
+          margin-top: 1rem;
+          img {
+            margin-right: 1.5rem;
+            transition: all 0.5s linear;
+            &:hover {
+              transform: translateY(-30%);
+            }
+          }
+        }
+      }
+
+      .about-me {
+        margin-top: 2rem;
+        .content-left {
+          border-radius: 1rem;
+          background-image: url("../../assets/images/reactjs.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          min-height: 40vh;
+          // width: 100%;
+        }
+        .content-right {
+          // padding: 1rem;
+
+          .title {
+            font-size: 2rem;
+            color: var(--color--3);
+            text-transform: capitalize;
+            text-align: center;
+            font-weight: 700;
+          }
+          .content {
+            .content-title {
+              font-size: 1.5rem;
+              font-weight: 600;
+              text-align: justify;
+            }
+
+            .content-1 {
+              font-size: 1.2rem;
+              line-height: 1.5;
+              margin-bottom: 0.5rem;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    .container {
+      .row {
+        .skills {
+          .technology-skills {
+            text-align: center;
+            img {
+              width: 7rem;
+              height: 7rem;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+        .about-me {
+          .content-left {
+            background-size: contain;
+          }
+          .content-right {
+            .content {
+              text-align: center;
+
+              .content-1 {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-me-container {
+    .container {
+      .row {
+        .content-right {
+          .content {
+            .content-title {
+              text-align: center !important;
+            }
+            .content-1 {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

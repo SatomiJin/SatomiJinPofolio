@@ -1,0 +1,128 @@
+.intro-container {
+  margin-top: 1rem;
+  .container {
+    .row {
+      .content-left {
+        padding-top: 2rem;
+        .title-intro {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+        .content-intro {
+          font-size: 1.2rem;
+          color: var(--color--1);
+        }
+        .social-contact {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 1rem;
+          a {
+            color: var(--color--1);
+            i {
+              font-size: 2.7rem;
+              transition: all 0.3s linear;
+
+              &:hover {
+                cursor: pointer;
+                animation: iconAnimation 1s linear;
+              }
+            }
+          }
+        }
+        .cv {
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .content-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .image {
+          background-image: url("../../assets/images/image.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 50vh;
+          width: 50vh;
+          border-radius: 50%;
+          border: 2px solid var(--color--1);
+          animation: borderRadiusAnimation 10s infinite;
+        }
+      }
+    }
+  }
+}
+
+//multiple view
+@media (max-width: 768px) {
+  .intro-container {
+    .container {
+      .row {
+        flex-direction: column-reverse;
+        .content-left {
+          text-align: center;
+        }
+        .content-right {
+          .image {
+            height: 30vh;
+            width: 30vh;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .intro-container {
+    .container {
+      .row {
+        .content-right {
+          .image {
+            height: 25vh;
+            width: 25vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+// animation
+
+@keyframes iconAnimation {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes borderRadiusAnimation {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
