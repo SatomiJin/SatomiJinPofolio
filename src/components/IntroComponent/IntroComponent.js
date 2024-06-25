@@ -19,7 +19,7 @@ function IntroComponent() {
               </a>
             </div>
             <div className="cv">
-              <a href={myCV} download={"DongHuuTrong"}>
+              <a href={myCV} download={"Dong-Huu-Trong"}>
                 <button className="btn btn-outline-primary">{t("download")}</button>
               </a>
             </div>
