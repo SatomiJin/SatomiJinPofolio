@@ -5,7 +5,7 @@ import projects from "../../projectData";
 function Projects() {
   let { t } = useTranslation();
   return (
-    <div className="projects-container container">
+    <div id="project" className="projects-container container">
       <div className="title">
         <div className="text">{t("projectTitle")}</div>
       </div>

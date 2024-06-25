@@ -74,9 +74,9 @@
     }
     .header-container_mobile {
       display: block;
-
       .row {
         .header-top {
+          background-color: #fff;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           position: sticky;
           top: 0;
@@ -95,9 +95,10 @@
           bottom: 0;
           right: 0;
           left: 0;
+          border: 1px solid #000;
           .menu-item_mobile {
             height: 8vh;
-            border: 1px solid #000;
+            background-color: #fff;
 
             .item {
               color: var(--color--1);

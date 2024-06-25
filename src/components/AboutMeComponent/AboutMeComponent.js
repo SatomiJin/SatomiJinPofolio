@@ -3,7 +3,7 @@ import "./AboutMeComponent.scss";
 function AboutMeComponent() {
   const { t } = useTranslation();
   return (
-    <div className="about-me-container">
+    <div id="about" className="about-me-container">
       <div className="container">
         <div className="row">
           <div className="skills col-12">
