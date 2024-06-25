@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "./IntroComponent.scss";
-
+import myCV from "../../assets/CV/DongHuuTrong_CV (1).pdf";
 function IntroComponent() {
   let { t } = useTranslation();
   return (
@@ -19,7 +19,7 @@ function IntroComponent() {
               </a>
             </div>
             <div className="cv">
-              <a href="../../assets/CV/DongHuuTrong_CV (1).pdf" download={"DongHuuTrong"}>
+              <a href={myCV} download={"DongHuuTrong"}>
                 <button className="btn btn-outline-primary">{t("download")}</button>
               </a>
             </div>
