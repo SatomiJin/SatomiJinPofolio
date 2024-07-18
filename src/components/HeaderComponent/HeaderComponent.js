@@ -10,7 +10,7 @@ function HeaderComponent() {
           <div className="logo col col-3">Satomi Jin</div>
           <div className="header-wrapper col col-8">
             <ul className="list-item">
-              <a href="#intro">
+              <a href="#">
                 <li className="item">{t(`intro`)}</li>
               </a>
               <a href="#about">
@@ -19,7 +19,7 @@ function HeaderComponent() {
               <a href="#project">
                 <li className="item">{t("project")}</li>
               </a>
-              <a href="contact">
+              <a href="#contact">
                 <li className="item">{t("contact")}</li>
               </a>
             </ul>
@@ -39,7 +39,7 @@ function HeaderComponent() {
           </div>
           <div className="header-bottom col col-12">
             <div className="menu-item_mobile row">
-              <a href="#intro" className="item col col-3">
+              <a href="#" className="item col col-3">
                 <i class="fa-solid fa-address-card"></i>
                 {t("intro")}
               </a>
@@ -49,7 +49,7 @@ function HeaderComponent() {
                 {t("about")}
               </a>
 
-              <a href="project" className="item col col-3">
+              <a href="#project" className="item col col-3">
                 <i class="fa-solid fa-diagram-project"></i>
                 {t("project")}
               </a>
