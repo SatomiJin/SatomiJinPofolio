@@ -39,24 +39,20 @@ function HeaderComponent() {
           </div>
           <div className="header-bottom col col-12">
             <div className="menu-item_mobile row">
-              <a href="#" className="item col col-3">
+              <a href="#" className="item col col-3" title={t("intro")}>
                 <i class="fa-solid fa-address-card"></i>
-                {t("intro")}
               </a>
 
-              <a href="#about" className="item col col-3">
+              <a title={t("about")} href="#about" className="item col col-3">
                 <i class="fa-solid fa-circle-info"></i>
-                {t("about")}
               </a>
 
-              <a href="#project" className="item col col-3">
+              <a title={t("project")} href="#project" className="item col col-3">
                 <i class="fa-solid fa-diagram-project"></i>
-                {t("project")}
               </a>
 
-              <a href="#contact" className="item col col-3">
+              <a title={t("contact")} href="#contact" className="item col col-3">
                 <i class="fa-solid fa-at"></i>
-                {t("contact")}
               </a>
             </div>
           </div>

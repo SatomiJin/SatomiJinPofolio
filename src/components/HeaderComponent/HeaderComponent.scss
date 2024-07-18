@@ -93,9 +93,10 @@
         .header-bottom {
           position: fixed;
           bottom: 0;
-          right: 0;
-          left: 0;
+          width: 100vw;
+
           border: 1px solid #000;
+
           .menu-item_mobile {
             height: 8vh;
             background-color: #fff;
@@ -116,7 +117,7 @@
                 color: var(--color--2);
               }
               i {
-                font-size: 1rem;
+                font-size: 1.4rem;
               }
             }
           }
