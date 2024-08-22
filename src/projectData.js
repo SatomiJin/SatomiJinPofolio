@@ -28,6 +28,15 @@ let projects = [
     image: "https://raw.githubusercontent.com/SatomiJin/cv-images/main/schwarzer-ritter.png",
     live: "https://sales.schwarzerritter.tech/",
   },
+  {
+    name: "WATCHING MOVIE - RESPONSIVE",
+    fe: "https://github.com/SatomiJin/cinema-",
+    be: "",
+    image:
+      "https://raw.githubusercontent.com/SatomiJin/cv-images/main/z5756455347942_a49837c5e97930169dbf642d2d32a956.jpg",
+    live: "https://cinema-kappa-ten.vercel.app/",
+  },
 ];
+// https://raw.githubusercontent.com/SatomiJin/cv-images/main/z5756455347942_a49837c5e97930169dbf642d2d32a956.jpg
 
 export default projects;
